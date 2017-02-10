@@ -29,24 +29,24 @@ header {
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  padding: 2px;
-  box-shadow: 0 3px 3px 5px rgba(0,0,0,0.7);
+  padding: 2.5px;
+  border:1px dashed;
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 hr {
@@ -146,6 +146,10 @@ a {
 
 .pizza_banner {
   background: url(../pictures/banner_pizza.png) 50% 0 no-repeat;
+
+}
+.pizza_banner h2{
+  font-size: 1.5rem
 }
 
 .dinner_banner {
@@ -156,7 +160,7 @@ a {
   position: absolute;
   margin: 0;
   left: 50%;
-  top: 0;
+  top: 5px;
   transform: translate(-50%, 0);
 }
 
@@ -212,7 +216,7 @@ a {
 button {
   width: 284px;
   height: 60px;
-  margin: 10px 5px;
+  margin: 10px;
   background-color: #333;
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #eee;
@@ -248,7 +252,7 @@ button:before {
   height: 40px;
   background-color: transparent;
   margin: 5px 7px;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid;
   border-radius: 5px;
 }
@@ -285,7 +289,7 @@ button:hover, button:active {
 /*End Buttons Style */
 
 /*Mobile and Tablet Media Query */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .hide {
     display: none;
   }
@@ -340,7 +344,7 @@ button:hover, button:active {
 /*End Mobile Nav */
 
 /*Layout for Bigger Screen */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
 
   .menu_nav {
     padding: 1em;
