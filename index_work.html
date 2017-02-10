@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Mobile Friendliness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- media-queries.js (fallback) -->
+  <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
+    <![endif]-->
+
+  <!-- html5.js -->
+  <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main_work.css">
+  <!--Web Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+  <!--Style Fixed Mobile background-->
+  <style>
+    #bg_image {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -9999!important;
+    }
+    
+    @media only screen and (max-width: 639px){
+    #bg_image{
+    background-image:url(pictures/bg2_sm.jpg);
+    }
+    }
+    @media only screen and (min-width: 640px){
+    #bg_image{
+    background-image:url(pictures/bg2.jpg);
+    }
+    }
+  </style>
+  <!--End Style Fixed Mobile background-->
+
+  <title>Pizza</title>
+</head>
+
+<body>
+
+  <!--Fixed Mobile background-->
+  <div id="bg_image"> </div>
+  <!--End Mobile Fixed bg-->
+
+
+  <!--Navigation-->
+
+  <div class="cart_nav flexbox right hide">
+    <p class="cart"><img src="pictures/cart2.png" alt=""></p>
+    <p> <span class="hide">Ваш заказ:</span><span>0</span> руб.</p>
+    <p class="checkout"><a href="#">Оформить</a></p>
+  </div>
+
+
+  <div class="menu_nav">
+    <nav>
+      <input type="checkbox" id="toggle">
+      <label class="toggle_menu" for="toggle">Меню</label>
+      <div class="logo"><img src="pictures/logo.png" alt=""></div>
+      <div class="mobile_cart clearfix"><img src="pictures/cart2.png" alt=""></div>
+      <ul class="hide">
+        <li class="name hide clearfix"><a href="#">Lion Delivery</a></li>
+        <li><a href="#">Пицца</a></li>
+        <li><a href="#">Обеды</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Акции</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!--End Navigation-->
+
+  <!--Content-->
+
+  <main>
+    <!--Header-->
+    <header>
+      <h1>Доставка пиццы и обедов</h1>
+      <h2>555-555</h2>
+      <h3>ул.Толстого,5</h3>
+      <h4>9:00-02:00</h4>
+    </header>
+    <!--End Header-->
+
+
+    <!--Banner Pizza-->
+    <section class="pizza_banner" id="pizza_banner">
+      <h2>Третья пицца <br>БЕСПЛАТНО!</h2>
+      <button class="choose_pizza">Выбрать пиццу</button>
+    </section>
+    <!--End Banner Pizza-->
+    <hr>
+
+    <!--Menu Buttons-->
+
+    <section id="menu_buttons">
+      <h2>Меню</h2>
+      <form action="url">
+        <button class="menu_button">Пиццы</button>
+        <button class="menu_button">Салаты</button>
+        <button class="menu_button">Сэндвичи</button>
+        <button class="menu_button">Напитки</button>
+        <button class="menu_button">Обеды</button>
+        <button class="menu_button specials">Акции</button>
+      </form>
+    </section>
+    <!--End Menu Buttons-->
+
+
+    <!--Banner Dinner-->
+    <div class="dinner_banner">
+      <img src="pictures/lunch.jpg" alt="Обеденное меню">
+      <br>
+      <button class="order_lunch">Заказать обед</button>
+    </div>
+    <!--End Banner Dinner-->
+
+    <hr>
+
+    <!--Pizza Gallery-->
+
+    <section id="pizza">
+      <h2>Пиццы</h2>
+
+      <div class="filter">
+        <button class="pizza_type">Мясо</button>
+        <button class="pizza_type">Курица</button>
+        <button class="pizza_type">Вегетерианская</button>
+        <button class="pizza_type">Диетическая</button>
+        <button class="pizza_type">Классика</button>
+        <button class="pizza_type">Детская</button>
+        <button class="pizza_type">Острая</button>
+        <button class="pizza_type">Необычная</button>
+      </div>
+
+      <div class="flexbox center">
+        <div class="card">
+          <h2>Пепперони</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_1" type="radio" value="small"> 22 см
+            <input name="p_1" type="radio" value="medium"> 32 см
+            <input name="p_1" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+
+        <div class="card">
+          <h2>Name</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_2" type="radio" value="small" checked> 22 см
+            <input name="p_2" type="radio" value="medium"> 32 см
+            <input name="p_2" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Name</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_3" type="radio" value="small" checked> 22 см
+            <input name="p_3" type="radio" value="medium"> 32 см
+            <input name="p_3" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Name</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_4" type="radio" value="small" checked> 22 см
+            <input name="p_4" type="radio" value="medium"> 32 см
+            <input name="p_4" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Name</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_5" type="radio" value="small" checked> 22 см
+            <input name="p_5" type="radio" value="medium"> 32 см
+            <input name="p_5" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Name</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_6" type="radio" value="small" checked> 22 см
+            <input name="p_6" type="radio" value="medium"> 32 см
+            <input name="p_6" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Name</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_7" type="radio" value="small" checked> 22 см
+            <input name="p_7" type="radio" value="medium"> 32 см
+            <input name="p_7" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Name</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_8" type="radio" value="small" checked> 22 см
+            <input name="p_8" type="radio" value="medium"> 32 см
+            <input name="p_8" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Name</h2>
+          <p><img src="pictures/p-1.png" alt="">Пепперони,моцарелла,томатный соус.</p>
+          <br>
+          <form action="url">
+            <input name="p_9" type="radio" value="small" checked> 22 см
+            <input name="p_9" type="radio" value="medium"> 32 см
+            <input name="p_9" type="radio" value="large">40 см
+          </form>
+          <br>
+          <div class="param">
+            <p> <span class="price">7,5</span> рублей</p>
+            <p> <span class="weight">450</span> гр</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+      </div>
+    </section>
+    <!--End Pizza Gallery-->
+
+    <!--Dinner Gallery-->
+    <hr>
+    <section id="dinner">
+      <h2>Обеденное меню</h2>
+
+      <div class="flexbox center">
+
+        <div class="card">
+          <h2>Понедельник</h2>
+          <img src="pictures/dinner.png" alt="">
+          <div class="dinner_menu">
+            <p>Томатный суп</p>
+            <p>Греческий салат</p>
+            <p>Сэндвич с индейкой</p>
+          </div>
+          <div class="param">
+            <p><span class="price">5</span> рублей</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+
+        <div class="card">
+          <h2>Вторник</h2>
+          <img src="pictures/dinner.png" alt="">
+          <div class="dinner_menu">
+            <p>Soup</p>
+            <p>Salad</p>
+            <p>Sandwich</p>
+          </div>
+          <div class="param">
+            <p><span class="price">5</span> рублей</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Среда</h2>
+          <img src="pictures/dinner.png" alt="">
+          <div class="dinner_menu">
+            <p>Soup</p>
+            <p>Salad</p>
+            <p>Sandwich</p>
+          </div>
+          <div class="param">
+            <p><span class="price">5</span> рублей</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Четверг</h2>
+          <img src="pictures/dinner.png" alt="">
+          <div class="dinner_menu">
+            <p>Soup</p>
+            <p>Salad</p>
+            <p>Sandwich</p>
+          </div>
+          <div class="param">
+            <p><span class="price">5</span> рублей</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+        <div class="card">
+          <h2>Пятница</h2>
+          <img src="pictures/dinner.png" alt="">
+          <div class="dinner_menu">
+            <p>Soup</p>
+            <p>Salad</p>
+            <p>Sandwich</p>
+          </div>
+          <div class="param">
+            <p><span class="price">5</span> рублей</p>
+          </div>
+          <br>
+          <button class="to_cart">Заказать</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!--End Dinner Gallery-->
+    <hr>
+
+
+  </main>
+
+  <!--End Content-->
+
+  <footer></footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(window).scroll(function(){
+    //Sticky bottom nav
+    if($(window).scrollTop()>= 100){
+       $('.cart_nav').addClass('fixed');
+    }
+    else {
+    	$('.cart_nav').removeClass('fixed');
+    }
+    });
+  </script>
+
+</body>
+
+</html>
