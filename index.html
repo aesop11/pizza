@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<!-- Mobile Friendliness -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- CSS -->
+<link rel="stylesheet" href="css/main.css">
+<!--Web Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<!-- media-queries.js (fallback) -->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
+<![endif]-->
+
+<!-- html5.js -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<title>Pizza</title>
+</head>
+
+  <body>
+
+<!--Fixed background-->
+<div id="bg_image">
+<style>
+@media only screen and (max-width: 640px){
+#bg_image {
+background-image:url(pictures/bg_small.jpg);
+background-size: cover;
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: -9999!important;
+}
+}
+</style>
+</div>
+<!--End Fixed bg-->
+
+<!--Navigation-->
+
+  <div class="logo hide"><a href="#"><img src="pictures/logo.png"></a>
+   </div>
+
+<nav>
+<input type="checkbox" id="toggle">
+    <label class="toggle_menu" for="toggle">Меню</label>
+    <div class="mobile_cart"><img src="pictures/cart2.png"></div>
+  <ul class="hide">
+      <li><a href="#">Пиццы</a></li>
+      <li><a href="#">Обеды</a></li>
+      <li><a href="#">Салаты</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li class="special"><a href="#">Акции</a></li> 
+      <li class="cart hide"><a href="#"><img src="pictures/cart2.png"></a></li>
+
+    </ul>
+</nav>
+
+<!--End Navigation-->
+
+<main>
+<!--Header-->
+<header>
+<h1>Доставка пиццы и обедов</h1>
+<h2>555-555</h2>
+<h3>ул.Толстого,5</h3>
+<h3>9:00-02:00</h3>
+</header>
+<!--End Header-->
+<hr>
+<!--Content-->
+
+<!--Banner Pizza-->
+<section id="pizza_banner">
+<h1>Третья пицца <br>в ПОДАРОК!</h1>
+<button class="choose_pizza">Выбрать пиццу</button>
+</section>
+<!--End Banner Pizza-->
+<hr>
+
+<!--Menu Buttons-->
+
+<section id="menu_buttons"> 
+<h1>Меню</h1>
+
+<div class="menu1 flexbox">
+<button class="pizza">Пиццы</button>
+<button class="salad">Салаты</button>
+</div>
+
+<div class="menu2 flexbox">
+<button class="burger">Сэндвичи</button>
+<button class="drink">Напитки</button>
+</div>
+
+<div class="menu3 flexbox">
+<button class="dinner"> Обеды</button>
+<button class="specials">Акции</button>
+</div>
+
+<!--Banner Dinner-->
+<div class="dinner_banner">
+<img src="pictures/lunch.jpg" alt="Обеденное меню">
+<br>
+<button class="order_lunch">Заказать обед</button>
+</div>
+<!--End Banner Dinner-->
+
+</section>
+<!--End Menu Buttons-->
+
+<hr>
+
+<!--Pizza Gallery-->
+
+<section id="pizza_menu">
+<h1>Пиццы</h1>
+
+
+<div class="flexbox">
+<div class="card">
+<h2>Пепперони</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+<br>
+  <form>
+    <input  name="p-1-size" type="radio" value="small"> 22 см
+    <input  name="p-1-size" type="radio" value="medium" > 32 см
+    <input  name="p-1-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+
+<div class="card">
+<h2>Name</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+ <br>
+ <form>
+    <input  name="p-2-size" type="radio" value="small" checked> 22 см
+    <input  name="p-2-size" type="radio" value="medium" > 32 см
+    <input  name="p-2-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card">
+<h2>Name</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+<br>
+  <form>
+    <input  name="p-3-size" type="radio" value="small" checked> 22 см
+    <input  name="p-3-size" type="radio" value="medium" > 32 см
+    <input  name="p-3-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card">
+<h2>Name</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+ <form>
+    <input  name="p-4-size" type="radio" value="small" checked> 22 см
+    <input  name="p-4-size" type="radio" value="medium" > 32 см
+    <input  name="p-4-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card">
+<h2>Name</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+  <form>
+    <input  name="p-5-size" type="radio" value="small" checked> 22 см
+    <input  name="p-5-size" type="radio" value="medium" > 32 см
+    <input  name="p-5-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card">
+<h2>Name</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+  <form>
+    <input  name="p-6-size" type="radio" value="small" checked> 22 см
+    <input  name="p-6-size" type="radio" value="medium" > 32 см
+    <input  name="p-6-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card">
+<h2>Name</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+  <form>
+    <input  name="p-7-size" type="radio" value="small" checked> 22 см
+    <input  name="p-7-size" type="radio" value="medium" > 32 см
+    <input  name="p-7-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card">
+<h2>Name</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+  <form>
+    <input  name="p-8-size" type="radio" value="small" checked> 22 см
+    <input  name="p-8-size" type="radio" value="medium" > 32 см
+    <input  name="p-8-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card">
+<h2>Name</h2>
+<p><img src="pictures/p-1.png">Пепперони,моцарелла,томатный соус.</p>
+ <form>
+    <input  name="p-9-size" type="radio" value="small" checked> 22 см
+    <input  name="p-9-size" type="radio" value="medium" > 32 см
+    <input  name="p-9-size" type="radio" value="large">40 см
+  </form> 
+<br>
+<div class="param">
+<p> <span class="price">7,5</span> рублей</p>
+<p> <span class="weight">450</span> гр</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+ </div>
+<!--End Pizza Photos and Description-->
+
+
+<!--Dinner Photos and Description-->
+<hr>
+<section id="dinner_menu">
+<h1>Обеденное меню</h1>
+
+<div class="dinner_gallery flexbox">
+
+<div class="card mon">
+<h2>Понедельник</h2>
+<img src="pictures/dinner.png">
+<div class="dinner_menu">
+<p>Томатный суп</p>
+<p>Греческий салат</p>
+<p>Сэндвич с индейкой</p>
+</div>
+<div class="param">
+<p><span class="price">5</span> рублей</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+
+<div class="card tue">
+<h2>Вторник</h2>
+<img src="pictures/dinner.png">
+<div class="dinner_menu">
+<p>Soup</p>
+<p>Salad</p>
+<p>Sandwich</p>
+</div>
+<div class="param">
+<p><span class="price">5</span> рублей</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card wed">
+<h2>Среда</h2>
+<img src="pictures/dinner.png">
+<div class="dinner_menu">
+<p>Soup</p>
+<p>Salad</p>
+<p>Sandwich</p>
+</div>
+<div class="param">
+<p><span class="price">5</span> рублей</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card thur">
+<h2>Четверг</h2>
+<img src="pictures/dinner.png">
+<div class="dinner_menu">
+<p>Soup</p>
+<p>Salad</p>
+<p>Sandwich</p>
+</div>
+<div class="param">
+<p><span class="price">5</span> рублей</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+<div class="card fri">
+<h2>Пятница</h2>
+<img src="pictures/dinner.png">
+<div class="dinner_menu">
+<p>Soup</p>
+<p>Salad</p>
+<p>Sandwich</p>
+</div>
+<div class="param">
+<p><span class="price">5</span> рублей</p>
+</div>
+<br>
+<button class="to_cart">Заказать</button>
+</div>
+
+</section>
+
+<!--End Dinner Photos and Description-->
+
+
+
+
+
+</main>
+
+<!--End Content-->
+
+<footer></footer>
+
+     
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
+   
+  </body>
+</html>
